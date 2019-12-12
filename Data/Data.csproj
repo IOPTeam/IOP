@@ -11,6 +11,8 @@
     <Compile Remove="Migrations\20191208013710_Initial.Designer.cs" />
     <Compile Remove="Migrations\20191208013845_Initial.cs" />
     <Compile Remove="Migrations\20191208013845_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20191212165455_SomeVirtualPropertiesAdded_test.cs" />
+    <Compile Remove="Migrations\20191212165455_SomeVirtualPropertiesAdded_test.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,6 +22,10 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.0.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
