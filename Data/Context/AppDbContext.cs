@@ -39,7 +39,7 @@ namespace Data.Context
             };
         }
 
-        public virtual DbSet<Package> Packages { get; set; }
+        public virtual DbSet<Parcel> Packages { get; set; }
         public virtual DbSet<Address> Addresses { get; set; }
         public virtual DbSet<StorePlace> StorePlaces { get; set; }
 

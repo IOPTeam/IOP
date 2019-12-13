@@ -15,12 +15,12 @@ namespace Api.Managers
             _context = context;
         }
 
-        public Package GetById(int id)
+        public Parcel GetById(int id)
         {
             return _context.Packages.FirstOrDefault(e => e.Id.Equals(id));
         }
 
-        public Package GetByReceiverAddress(Address address)
+        public Parcel GetByReceiverAddress(Address address)
         {
             return _context.Packages.FirstOrDefault(e => e.ReceiverAddress.Id.Equals(address.Id));
         }

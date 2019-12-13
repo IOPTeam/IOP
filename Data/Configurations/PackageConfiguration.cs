@@ -8,7 +8,7 @@ namespace Data.Configurations
         public void AddConfiguration(ModelBuilder modelBuilder)
         {
             modelBuilder
-                .Entity<Package>(entity =>
+                .Entity<Parcel>(entity =>
                 {
                     entity
                         .HasKey(e => e.Id);

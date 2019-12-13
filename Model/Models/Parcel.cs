@@ -1,6 +1,6 @@
 ﻿namespace Model.Models
 {
-    public class Package
+    public class Parcel
     {
         public int Id { get; set; }
         public int StorePlaceId { get; set; }

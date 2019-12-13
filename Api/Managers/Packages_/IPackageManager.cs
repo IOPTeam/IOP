@@ -7,7 +7,7 @@ namespace Api.Managers
 {
     public interface IPackageManager
     {
-        public Package GetById(int id);
-        public Package GetByReceiverAddress(Address address);
+        public Parcel GetById(int id);
+        public Parcel GetByReceiverAddress(Address address);
     }
 }
