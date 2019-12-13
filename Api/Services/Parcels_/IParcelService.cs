@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Api.Services
 {
-    public interface IPackageService
+    public interface IParcelService
     {
         public Parcel GetById(int id);
     }

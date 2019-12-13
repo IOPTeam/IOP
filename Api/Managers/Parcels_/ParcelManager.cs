@@ -6,23 +6,23 @@ using Data.Context;
 
 namespace Api.Managers
 {
-    public class PackageManager : IPackageManager
+    public class ParcelManager : IParcelManager
     {
         private readonly AppDbContext _context;
 
-        public PackageManager(AppDbContext context)
+        public ParcelManager(AppDbContext context)
         {
             _context = context;
         }
 
         public Parcel GetById(int id)
         {
-            return _context.Packages.FirstOrDefault(e => e.Id.Equals(id));
+            return _context.Parcels.FirstOrDefault(e => e.Id.Equals(id));
         }
 
         public Parcel GetByReceiverAddress(Address address)
         {
-            return _context.Packages.FirstOrDefault(e => e.ReceiverAddress.Id.Equals(address.Id));
+            return _context.Parcels.FirstOrDefault(e => e.ReceiverAddress.Id.Equals(address.Id));
         }
     }
 }

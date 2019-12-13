@@ -6,11 +6,11 @@ using Model.Models;
 
 namespace Api.Services
 {
-    public class PackageService : IPackageService
+    public class ParcelService : IParcelService
     {
-        private readonly IPackageManager _packageManager;
+        private readonly IParcelManager _packageManager;
 
-        public PackageService(IPackageManager packageManager)
+        public ParcelService(IParcelManager packageManager)
         {
             _packageManager = packageManager;
         }
@@ -20,7 +20,7 @@ namespace Api.Services
             var package = _packageManager.GetById(id);
             if(package == default(Parcel))
             {
-                throw new Exception($"Package identified as { id } not found.");
+                throw new Exception($"Parcel identified as { id } not found.");
             }
 
             return package;

@@ -3,7 +3,7 @@ using Model.Models;
 
 namespace Data.Configurations
 {
-    class PackageConfiguration : IEntityConfiguration
+    class ParcelConfiguration : IEntityConfiguration
     {
         public void AddConfiguration(ModelBuilder modelBuilder)
         {

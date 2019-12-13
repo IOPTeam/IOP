@@ -5,7 +5,7 @@ using Model.Models;
 
 namespace Api.Managers
 {
-    public interface IPackageManager
+    public interface IParcelManager
     {
         public Parcel GetById(int id);
         public Parcel GetByReceiverAddress(Address address);
