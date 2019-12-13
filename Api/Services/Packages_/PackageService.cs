@@ -15,10 +15,10 @@ namespace Api.Services
             _packageManager = packageManager;
         }
         
-        public Package GetById(int id)
+        public Parcel GetById(int id)
         {
             var package = _packageManager.GetById(id);
-            if(package == default(Package))
+            if(package == default(Parcel))
             {
                 throw new Exception($"Package identified as { id } not found.");
             }
