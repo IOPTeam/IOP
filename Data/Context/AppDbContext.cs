@@ -21,7 +21,11 @@ namespace Data.Context
                 new StorePlaceConfiguration(),
                 new WarehouseConfiguration(),
                 new SendingPointConfiguration(),
-                new AddressConfiguration()
+                new AddressConfiguration(),
+                new EmployeeConfiguration(),
+                new EmploymentConfiguration(),
+                new PositionConfiguration(),
+                new VehicleConfiguration()
             };
         }
         
@@ -35,7 +39,11 @@ namespace Data.Context
                 new StorePlaceConfiguration(),
                 new WarehouseConfiguration(),
                 new SendingPointConfiguration(),
-                new AddressConfiguration()
+                new AddressConfiguration(),
+                new EmployeeConfiguration(),
+                new EmploymentConfiguration(),
+                new PositionConfiguration(),
+                new VehicleConfiguration()
             };
         }
 

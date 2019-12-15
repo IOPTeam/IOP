@@ -10,9 +10,9 @@ namespace Model.Models
 
         public DateTime EndDate { get; set; }
 
-        public Position Position { get; set; }
-
         public float Salary { get; set; }
+
+        public Position Position { get; set; }
 
         public Warehouse Warehouse { get; set; }
     }
